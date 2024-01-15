@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Марков](https://up.htmlacademy.ru/htmlcss-individual/1/user/2208219).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Изосимов] (https://t.me/andrey_Izosimov).
 
 ---
 
