@@ -6,6 +6,7 @@
   <title>HTML Academy: Седона каталог</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="./Images/favicon.png">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page_header">
@@ -46,14 +47,14 @@
 <main class="main_catalog">
   <h1 class="visually_hidden">Каталог гостиниц</h1>
   <section class="hotels">
-    <h2 class="section_title">Гостиницы Седоны</h2>
+    <h2 class="section_title__hotels">Гостиницы Седоны</h2>
     <ul class="breadcrums">
-      <li class="breadcrums_item">
+      <li class="breadcrums_item home">
         <a class="breadcrums_link" href="./index.html">
           <span class="visually_hidden">Главная</span>
         </a>
       </li>
-      <li class="breadcrums_item">
+      <li class="breadcrums_item catalog">
         <a class="breadcrums_link">Гостиницы</a>
       </li>
     </ul>
@@ -86,8 +87,8 @@
       <legend>Стоимость, ₽:</legend>
       <div class="wrapper_price">
         <div class="cost">
-          <input type="number" min="0" max="100000" step="1" placeholder="0">
-          <input type="number" min="0" max="100000" step="1" placeholder="9000">
+          <input type="number" min="0" max="100000" step="1" placeholder="0" value="0">
+          <input type="number" min="0" max="100000" step="1" placeholder="9000" value="9000">
         </div>
         <div class="cost-range">
           <button type="button"></button>
@@ -98,8 +99,8 @@
       </div>
       </fieldset>
       <div class="wrapper_buttons">
-      <button type="submit">Применить</button>
-      <button type="reset">Сбросить</button>
+      <button class="submit" type="submit">Применить</button>
+      <button class="reset" type="reset">Сбросить</button>
       </div>
     </form>
   </section>
@@ -111,13 +112,13 @@
         <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-      <button class="button_lsit button_chosed" type="button">
+      <button class="button_lsit button_chosed table" type="button">
         <span class="visually_hidden">Отображать иконками</span>
       </button>
-      <button class="button_lsit" type="button">
-        <span class="visually_hidden">Отображать во весь экран</span>
+      <button class="button_lsit monitor" type="button">
+        <span class="visually_hidden"> Весь экран</span>
       </button>
-      <button class="button_lsit" type="button">
+      <button class="button_lsit list" type="button">
         <span class="visually_hidden">Отображать списком</span>
       </button>
     </header>
@@ -127,8 +128,8 @@
           <a class="product_link" href="#">
             <img class="hotel_photo" src="images/hotels/hotel-1.jpg" height="212" width="300" alt="фото отеля">
             <h3 class="name_hotel">Название гостиницы</h3>
-            <p class="type">Тип гостиницы</p>
-            <p class="price_hotel">Цена гостиницы</p>
+            <p class="hotel_text type">Тип гостиницы</p>
+            <p class="hotel_text price_hotel">Цена гостиницы</p>
           </a>
           <div class="crad_buttons">
             <a class="hotel_page" href="#">Подробнее</a>
@@ -195,17 +196,17 @@
             <a class="pagination__link" href="#">1</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link" href="#"></a>2
+            <a class="pagination__link" href="#">2</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link" href="#"></a>3
+            <a class="pagination__link" href="#">3</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link" href="#"></a>4
+            <a class="pagination__link" href="#">4</a>
           </li>
           <li class="pagination__item dots"><span>...</span></li>
           <li class="pagination__item">
-            <a class="pagination__link" href="#"></a>10
+            <a class="pagination__link" href="#">10</a>
           </li>
         </ol>
       </div>
