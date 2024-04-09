@@ -162,13 +162,11 @@ body {
 }
 .list{
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
   width: 1200px;
-  align-items: flex-start;
-  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
-}
+  padding: 0;}
 .list_item, .list_item_turism{
   display: flex;
   flex-direction: column;
@@ -236,6 +234,7 @@ body {
 .wide{
   width: 800px;
   align-self: stretch;
+  grid-column: span 2;
 }
 .list_item:first-of-type:not(.wide), .list_item:last-of-type:not(.wide){
   color: #fff;
@@ -341,21 +340,23 @@ body {
 }
 .contacts_list{
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 142px auto 115px;
+  gap: 96px;
   margin: 0;
   padding: 0;
   width: 1200px;
   min-height: 130px;
+  justify-items: center;
   align-items: center;
+  justify-content: space-around;
 }
 
 .contact_social_list {
   list-style-type: none;
   display: flex;
-  width: 250px;
   min-height: 40px;
   align-items: center;
-  margin-left: 80px;
   padding: 0;
   gap: 19px;
   flex-wrap: wrap;
@@ -380,7 +381,7 @@ body {
   height: 40px;
   justify-content: center;
   align-items: center;
-  margin: auto;}
+}
 .tel{
   font-size: 40px;
   text-decoration: none;
@@ -395,11 +396,6 @@ body {
   display: block;
   width: 115px;
   height: 33px;
-  margin-left: 5px;
-}
-.logo_htmlacademy{
-  margin-left: auto;
-  width: 190px;
 }
 .hotels_container{
   display: flex;
@@ -455,9 +451,9 @@ body {
   background-repeat: no-repeat;
   background-position-y: center;
   display: flex;
-  justify-content: flex-end;
   width: 91px;
   height: 21px;
+  padding: 0 0 0 20px;
 }
 .hotel_options_container{
   display: flex;
@@ -577,9 +573,9 @@ body {
   flex-direction: column;
 }
 .product_list{
-  display: flex;
+  display: grid;
+  grid-template-columns: 342px 342px 342px;
   gap: 17px;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-top: 39px;
@@ -673,7 +669,8 @@ body {
   margin-bottom: 16px;
 }
 .crad_buttons{
-  display: flex;
+  display: grid;
+  grid-template-columns: 140px 140px;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 14px;
@@ -708,7 +705,6 @@ body {
   border: 0;
   color: #fff;
   background-color: #82B3D3;
-  padding: 8px 20px;
   font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
