@@ -55,7 +55,7 @@
           <h2 class="section_title__hotels">Гостиницы Седоны</h2>
           <ul class="breadcrums">
             <li class="breadcrums_item home">
-              <a class="breadcrums_link" href="./index.html">
+              <a class="breadcrums_link_home" href="./index.html">
                 <span class="visually_hidden">Главная</span>
               </a>
             </li>
@@ -68,26 +68,26 @@
             <div class="left_options">
               <fieldset class="options ">
               <legend class="options_title">Инфраструктура:</legend>
-                <label for="pool">
-                  <input type="checkbox" name="pool" id="pool">Бассейн
+                <label>
+                  <input type="checkbox" name="pool" checked>Бассейн
                 </label>
-                <label for="parking">
-                  <input type="checkbox" name="parking" id="parking">Парковка
+                <label>
+                  <input type="checkbox" name="parking" checked>Парковка
                 </label>
-                <label for="wifi">
-                  <input type="checkbox" name="wifi" id="wifi">Wi-Fi
+                <label>
+                  <input type="checkbox" name="wifi">Wi-Fi
                 </label>
               </fieldset>
               <fieldset class="options">
               <legend class="options_title">Тип Жилья</legend>
-              <label for="hotel">
-                <input type="radio" name="type_hotel" id="hotel" value="hotel">Гостиница
+              <label>
+                <input type="radio" name="type_hotel" value="hotel" checked>Гостиница
               </label>
-              <label for="motel">
-                <input type="radio" name="type_hotel" id="motel" value="motel">Мотель
+              <label >
+                <input type="radio" name="type_hotel" value="motel">Мотель
               </label>
-              <label for="apart">
-                <input type="radio" name="type_hotel" id="apart" value="apart">Апартаменты
+              <label>
+                <input type="radio" name="type_hotel" value="apart">Апартаменты
               </label>
               </fieldset>
             </div>
@@ -116,7 +116,7 @@
         </div>
     </section>
     <section class="products">
-      <header class="header_products">
+      <div class="header_products">
         <h2 class="section_title">Найдено гостиниц:<span> 38</span></h2>
         <div class="select_control_container">
           <select class="select_control" aria-label="Сортировка">
@@ -137,83 +137,59 @@
 
           </div>
         </div>
-      </header>
+      </div>
       <ul class="product_list">
         <li class="product">
-          <div class="produt_card">
             <a class="product_link" href="#">
               <img class="hotel_photo" src="images/hotels/hotel-1.jpg" height="212" width="300" alt="фото отеля">
               <h3 class="name_hotel">Amara Resort & Spa</h3>
-              <div class="hotel_text_wrapper">
+            </a>
                 <p class="hotel_text type">Гостиница</p>
                 <p class="hotel_text price_hotel">От 4000 ₽</p>
-              </div>
-            </a>
-            <div class="crad_buttons">
               <a class="hotel_page" href="#">Подробнее</a>
               <button class="like_hotel" type="button">В избранное</button>
               <p class="star star-4"><span class="visually_hidden">Количество звезд:4</span></p>
               <p class="raiting_text">Рейтинг:<span class="raiting_value" id="raiting_value_1">8,5</span></p>
-            </div>
-          </div>
         </li>
         <li class="product">
-          <div class="produt_card">
-            <a class="product_link" href="#">
-              <img class="hotel_photo" src="images/hotels/hotel-2.jpg" height="212" width="300" alt="фото отеля">
-              <h3 class="name_hotel">Villas at Poco Diablo</h3>
-              <div class="hotel_text_wrapper">
-                <p class="hotel_text type">Гостиница</p>
-                <p class="hotel_text price_hotel">От 5000 ₽</p>
-              </div>
-            </a>
-            <div class="crad_buttons">
-              <a class="hotel_page" href="#">Подробнее</a>
-              <button class="like_hotel" type="button">В избранное</button>
-              <p class="star star-4"><span class="visually_hidden">Количество звезд:4</span></p>
-              <p class="raiting_text">Рейтинг:<span class="raiting_value" id="raiting_value_1">8,5</span></p>
-            </div>
-          </div>
+          <a class="product_link" href="#">
+            <img class="hotel_photo" src="images/hotels/hotel-2.jpg" height="212" width="300" alt="фото отеля">
+            <h3 class="name_hotel">Villas at Poco Diablo</h3>
+          </a>
+              <p class="hotel_text type">Гостиница</p>
+              <p class="hotel_text price_hotel">От 5000 ₽</p>
+            <a class="hotel_page" href="#">Подробнее</a>
+            <button class="like_hotel" type="button">В избранное</button>
+            <p class="star star-4"><span class="visually_hidden">Количество звезд:4</span></p>
+            <p class="raiting_text">Рейтинг:<span class="raiting_value" id="raiting_value_1">8,5</span></p>
         </li>
         <li class="product">
-          <div class="produt_card">
-            <a class="product_link" href="#">
-              <img class="hotel_photo" src="images/hotels/hotel-3.jpg" height="212" width="300" alt="фото отеля">
-              <h3 class="name_hotel">Desert Quail Inn</h3>
-              <div class="hotel_text_wrapper">
-                <p class="hotel_text type">Гостиница</p>
-                <p class="hotel_text price_hotel">От 2500 ₽</p>
-              </div>
-            </a>
-            <div class="crad_buttons">
-              <a class="hotel_page" href="#">Подробнее</a>
-              <button class="like_hotel" type="button">В избранное</button>
-              <p class="star star-4"><span class="visually_hidden">Количество звезд:4</span></p>
-              <p class="raiting_text">Рейтинг:<span class="raiting_value" id="raiting_value_1">8,5</span></p>
-            </div>
-          </div>
+        <a class="product_link" href="#">
+          <img class="hotel_photo" src="images/hotels/hotel-3.jpg" height="212" width="300" alt="фото отеля">
+          <h3 class="name_hotel">Desert Quail Inn</h3>
+        </a>
+            <p class="hotel_text type">Гостиница</p>
+            <p class="hotel_text price_hotel">От 2500 ₽</p>
+          <a class="hotel_page" href="#">Подробнее</a>
+          <button class="like_hotel" type="button">В избранное</button>
+          <p class="star star-4"><span class="visually_hidden">Количество звезд:4</span></p>
+          <p class="raiting_text">Рейтинг:<span class="raiting_value" id="raiting_value_1">8,5</span></p>
         </li>
         <li class="product">
-          <div class="produt_card">
-            <a class="product_link" href="#">
-              <img class="hotel_photo" src="images/hotels/hotel-4.jpg" height="212" width="300" alt="фото отеля">
-              <h3 class="name_hotel">GreenTree Inn</h3>
-              <div class="hotel_text_wrapper">
-                <p class="hotel_text type">Гостиница</p>
-                <p class="hotel_text price_hotel">От 1500 ₽</p>
-              </div>
-            </a>
-            <div class="crad_buttons">
-              <a class="hotel_page" href="#">Подробнее</a>
-              <button class="like_hotel" type="button">В избранное</button>
-              <p class="star star-4"><span class="visually_hidden">Количество звезд:4</span></p>
-              <p class="raiting_text">Рейтинг:<span class="raiting_value" id="raiting_value_1">8,5</span></p>
-            </div>
-          </div>
-        </li>
+      <a class="product_link" href="#">
+        <img class="hotel_photo" src="images/hotels/hotel-3.jpg" height="212" width="300" alt="фото отеля">
+        <h3 class="name_hotel">GreenTree Inn</h3>
+      </a>
+          <p class="hotel_text type">Гостиница</p>
+          <p class="hotel_text price_hotel">От 1500 ₽</p>
+        <a class="hotel_page" href="#">Подробнее</a>
+        <button class="like_hotel" type="button">В избранное</button>
+        <p class="star star-4"><span class="visually_hidden">Количество звезд:4</span></p>
+        <p class="raiting_text">Рейтинг:<span class="raiting_value" id="raiting_value_1">8,5</span></p>
+    </li>
       </ul>
       <hr class="catalog_horizont">
-      <footer class="footer_products">
+      <div class="footer_products">
         <div class="pagination_wrapper">
           <ol class="pagination__list">
             <li class="pagination__item pagination__current">
@@ -234,7 +210,7 @@
             </li>
           </ol>
         </div>
-      </footer>
+      </div>
     </section>
     <footer class="main_footer">
       <section class="subscribe">

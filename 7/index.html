@@ -26,17 +26,19 @@
             </li>
           </ul>
           <ul class="user_action_list">
-            <li class="nav_item">
-              <a class="search_button nav_link" href="#">
-                <span class="visually_hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="nav_item">
-              <a class="heart_counter nav_link" href="#">
-                <span class="visually_hidden">Избранное</span>
-              </a>
-              <span class="number_heart"></span>
-            </li>
+            <ul class="nav_buttons_list">
+              <li class="nav_item">
+                <a class="search_button nav_link" href="#">
+                  <span class="visually_hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="nav_item">
+                <a class="heart_counter nav_link" href="#">
+                  <span class="visually_hidden">Избранное</span>
+                </a>
+                <span class="number_heart"></span>
+              </li>
+            </ul>
             <li class="nav_item">
               <a class="button_action nav_link" href="#">Хочу сюда!
               </a>
@@ -97,21 +99,20 @@
         </section>
         <section class="turism_info">
           <h2 class="visually_hidden">Удобства для туристов</h2>
-          <p class="turism_info__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="turism_info__description">Опытный персонал и качественное обслуживание!</p>
+          <div class="turism_info_wrapper">
+            <p class="turism_info__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="turism_info__description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="list">
-            <li class="list_item_turism">
-              <img width="75" height="72" src="images/icons/advantage.svg" alt="Изображение домика">
+            <li class="list_item_turism house">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить <br>в настоящем мотеле,<br> всё как в кино!</p>
             </li>
-            <li class="list_item_turism">
-              <img width="75" height="72" src="images/icons/food.svg" alt="Изображение бургера">
+            <li class="list_item_turism food">
               <h3>Еда</h3>
               <p>Всегда заказывайте <br>топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
-            <li class="list_item_turism">
-              <img width="75" height="72" src="images/icons/gift.svg" alt="Изображение подарка">
+            <li class="list_item_turism gifts">
               <h3>Сувениры</h3>
               <p>Не только китайского,<br> но и настоящего местного <br>производства!</p>
             </li>
@@ -119,8 +120,10 @@
           </ul>
         </section>
         <section class="hotel_action">
-          <h2 class="hotel_action_title">Заинтересовались?</h2>
-          <p class="hotel_action_text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="hotel_action_wrapper">
+            <h2 class="hotel_action_title">Заинтересовались?</h2>
+            <p class="hotel_action_text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          </div>
           <a href="./catalog.html" class="button">Поиск гостиницы в Седоне</a>
         </section>
       </div>
