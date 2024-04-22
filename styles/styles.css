@@ -1053,14 +1053,14 @@ color: #FFF;
   align-items: center;
   color: #FFF;
 }
-.pagination__item:hover:not(.pagination__current){
+.pagination__item:hover:not(.pagination__current,.dots){
   background-color: #68A2CA;
 }
-.pagination__item:focus-visible{
+.pagination__item:focus-visible:not(.pagination__current,.dots){
   outline: none;
   background-color: #68A2CA;
 }
-.pagination__item:active{
+.pagination__item:active:not(.pagination__current,.dots){
   color: #ffffff4D;
 }
 .pagination__current{
