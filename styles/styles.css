@@ -275,10 +275,6 @@ color: #FFF;
   margin: 0;
 }
 
-.list_item h3::before{
-
-}
-
 .list_item p{
   font-size: 18px;
   line-height: 21px;
