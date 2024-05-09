@@ -182,7 +182,59 @@
           </ul>
         </section>
       </footer>
-
+      <div class="modal_container vi">
+        <div class="modal modal_auth">
+          <button class="modal_close_button">
+            <span class="visually_hidden">Закрыть</span>
+          </button>
+          <section class="modal_content">
+            <form class="auth_form" method="post">
+              <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+              <p class="check_in_field field_group">
+                <label class="check_in_title" for="check_in">Дата Заезда:</label>
+                <input class="check_in_input field" type="text" id="check_in" name="check_in" placeholder="Укажите дату заезда" value="27 апреля 2020">
+              </p>
+              <p class="check_out_field field_group">
+                <label class="check_out_title" for="check_out">Дата Выезда:</label>
+                <input class="check_out_input field" type="text" id="check_out" name="check_out" placeholder="Укажите дату выезда" value="1 сентября 2023">
+              </p>
+              <p class="field_group">
+                <label class="adults_title" for="adults">Взрослые:</label>
+                <button class="modal_buttons minus_button">
+                  <span class="visually_hidden" >Убавить</span>
+                </button>
+                <input class="adults_field small_field" type="number" id="adults" name="adults" placeholder="0"  value="2">
+                <button class="modal_buttons plus_button">
+                  <span class="visually_hidden">Прибавить</span>
+                </button>
+              </p>
+              <p class="field_group">
+                <span class="form_label form_label_icon">
+                  <label class="kids_title" for="kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip_toggle" aria-labelledby="tooltip-label-date" type="button">
+                      <svg class="tooltip_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                      </svg>
+                      <span class="tooltip_text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </button>
+                  </span>
+                </span>
+                <button class="modal_buttons minus_button">
+                  <span class="visually_hidden">Убавить</span>
+                </button>
+                <input class="kids_field small_field" type="number" id="kids" name="kids" placeholder="0"  value="2">
+                <button class="modal_buttons plus_button">
+                  <span class="visually_hidden">Прибавить</span>
+                </button>
+              </p>
+              <button class="button_search" type="submit">
+                <a class="submit_modal" href="#">Найти</a>
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>

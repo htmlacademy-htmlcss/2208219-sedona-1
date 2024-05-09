@@ -621,7 +621,7 @@ color: #FFF;
   border: none;
   padding: 0;
   margin: 0;
-  gap: 16px;
+  gap: 15px;
   max-width: 200px;
 }
 
@@ -630,7 +630,7 @@ color: #FFF;
   font-weight: 700;
   line-height: 24px;
   color: #fff;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 
 }
 .hotel_price{
@@ -1129,4 +1129,385 @@ color: #FFF;
 .html_academy:focus-visible{
   fill: #756157;
   outline: none;
+}
+.modal_container{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(242, 242, 242, 0.80);
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.modal_auth{
+  width: 717px;
+}
+.modal_close_button {
+  position: absolute;
+  padding: 0;
+  top: 67px;
+  right: 51px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal_close_button:hover{
+  background-color: #E6E6E6;
+}
+.modal_close_button:focus-visible{
+  background-color: #E6E6E6;
+  border: solid 2px #83B3D3;
+  outline: none;
+}
+.modal_close_button:active{
+  opacity: 0.3;
+}
+.modal_title {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000;
+  grid-column: 1 / 3;
+}
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #68A2CA;
+  padding: 3px 3px;
+  margin-left: 10px;
+}
+.tooltip_toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.tooltip_toggle:hover .tooltip_icon {
+  color: #AF7842;
+}
+.tooltip_text {
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 15px 39px 18px 22px;
+  border-radius: 8px;
+  display: block;
+  min-width: 216px;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 15px 30px 0 #333333;
+  text-align: start;
+  top: 35px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.form_label_icon {
+  position: relative;
+  padding-right: 16px;
+}
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/tooltip-arrow.svg");
+  background-position: center;
+  width: 14px;
+  height: 6px;
+  position:absolute;
+  transform: rotate(180deg);
+  top: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field_group{
+  position: relative;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.field{
+  display: flex;
+  min-width: 440px;
+  height: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 20px;
+}
+.auth_form{
+  display: grid;
+  grid-template-columns: 240px 240px;
+  grid-template-rows: 56px 48px 48px 48px 60px;
+  row-gap: 48px;
+  column-gap: 94px;
+}
+.small_field{
+  max-width: 110px;
+  text-align: center;
+  display: flex;
+  height: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 20px;
+}
+.check_in_field,.check_out_field{
+  grid-column: 1 / 3;
+  position: relative;
+}
+.check_out_input,.check_in_input{
+  background-image: url("../images/icons/date.svg");
+  background-repeat: no-repeat;
+  background-position-x: 404px;
+  background-position-y: center;
+}
+.check_out_title::after, .check_in_title::after{
+  position: absolute;
+  top: 50px;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: none;
+}
+.check_out_title::after{
+  content: "На эти даты есть свободные номера. Пока есть.";
+  color: #333;
+  right: 87px;
+}
+.check_in_title::after{
+  content: "Мы не можем отправить вас в прошлое.";
+  color: #FF5757;
+  right: 138px;
+}
+.minus_button{
+  background-image: url("../images/icons/minus.svg");
+  right: 70px;
+  border-radius: 4px 0 0 4px ;
+}
+.plus_button{
+  background-image: url("../images/icons/plus.svg");
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+.plus_button:hover{
+  background-image: url("../images/icons/plus_hover.svg");
+}
+.plus_button:focus-visible{
+  background-image: url("../images/icons/plus_hover.svg");
+  outline: none;
+  border: solid 2px #68A2CA;
+}
+.minus_button:hover{
+  background-image: url("../images/icons/minus_hover.svg");
+}
+.minus_button:focus-visible{
+  background-image: url("../images/icons/minus_hover.svg");
+  outline: none;
+  border: solid 2px #68A2CA;
+}
+.plus_button:active{
+  opacity: 0.3;
+}
+.minus_button:active{
+  opacity: 0.3;
+}
+.modal_buttons {
+  position: absolute;
+  content: "";
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24px 20px;
+}
+.modal_buttons:hover{
+  cursor: pointer;
+}
+.button_search{
+  display: block;
+  grid-column: 1/3;
+  border-radius: 10px;
+  background: #83B3D3;
+  padding: 0;
+  border: none;
+  max-width: 577px;
+}
+.button_search:hover{
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+.button_search:focus-visible{
+  background-color: #68A2CA;
+  outline: none;
+}
+.button_search:active{
+  opacity: 0.3;
+}
+.submit_modal{
+  color: var(--basic-white, #FFF);
+  display: block;
+  min-height: 24px;
+  text-align: center;
+  font-family: "PT Sans , sans-serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+}
+.range_scale{
+  position: relative;
+  height: 4px;
+  margin-top: 50px;
+  background: #FFFFFF4D;
+  border-radius: 2px;
+}
+.range_bar{
+  position: absolute;
+  height: 4px;
+  width: 213px;
+  background-color: #fff;
+}
+.button_range{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.button_range:hover{
+  background-color: #E6E6E6;
+}
+.button_range:focus-visible{
+  outline: none;
+  background-color: #E6E6E6;
+  border: solid 2px #68A2CA;
+}
+.button_range:active{
+  outline: none;
+  background-color: #E6E6E6;
+  border: solid 2px #68A2CA
+}
+.toogle_min{
+  top: -8px;
+  left: 0;
+}
+.toogle_max{
+  top: -8px;
+  left: 200px;
+}
+.label_options:hover{
+opacity: 0.3;
+}
+.input_options_checkbox{
+  appearance: none;
+}
+.input_options_checkbox::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-bottom: -5px;
+  box-sizing: border-box;
+}
+.input_options_checkbox:checked::before{
+  background-image: url(../images/icons/tick.svg);
+  background-position: center;
+}
+.input_options_checkbox:focus-visible{
+  outline: none;
+}
+.input_options_checkbox:focus-visible::before{
+  outline: none;
+  border: #68A2CA solid 2px;
+}
+.input_options_checkbox:active::before{
+  outline: none;
+  border: #68A2CA solid 2px;
+}
+.input_options_radio{
+  appearance: none;
+}
+.input_options_radio::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-bottom: -5px;
+  box-sizing: border-box;
+}
+.input_options_radio:checked::before{
+  background-image: url(../images/icons/tick_radio.svg);
+  background-position: center;
+}
+.input_options_radio:focus-visible{
+  outline: none;
+}
+.input_options_radio:focus-visible::before{
+  outline: none;
+  border: #68A2CA solid 2px;
+}
+.input_options_radio:active::before{
+  outline: none;
+  border: #68A2CA solid 2px;
 }
