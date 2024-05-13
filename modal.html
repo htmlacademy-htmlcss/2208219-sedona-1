@@ -189,19 +189,21 @@
               <p class="check_in_field field_group">
                 <label class="check_in_title" for="check_in">Дата Заезда:</label>
                 <input class="check_in_input field" type="text" id="check_in" name="check_in" placeholder="Укажите дату заезда" value="27 апреля 2020">
+                <span class="check_in_subtitle">Мы не можем отправить вас в прошлое.</span>
               </p>
               <p class="check_out_field field_group">
                 <label class="check_out_title" for="check_out">Дата Выезда:</label>
                 <input class="check_out_input field" type="text" id="check_out" name="check_out" placeholder="Укажите дату выезда" value="1 сентября 2023">
+                <span class="check_out_subtitle">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <div class="field_group">
                 <label class="adults_title" for="adults">Взрослые:</label>
                 <div class="number_input">
-                  <button class="modal_buttons minus_button">
+                  <button class="modal_buttons minus_button" type="button">
                     <span class="visually_hidden" >Убавить</span>
                   </button>
                   <input class="adults_field small_field" type="number" id="adults" name="adults" placeholder="0"  value="2">
-                  <button class="modal_buttons plus_button">
+                  <button class="modal_buttons plus_button" type="button">
                     <span class="visually_hidden">Прибавить</span>
                 </div>
                 </button>
@@ -219,7 +221,7 @@
                   </span>
                 </span>
                 <div class="number_input">
-                  <button class="modal_buttons minus_button">
+                  <button class="modal_buttons minus_button" type="button">
                     <span class="visually_hidden">Убавить</span>
                   </button>
                   <input class="kids_field small_field" type="number" id="kids" name="kids" placeholder="0"  value="2">
